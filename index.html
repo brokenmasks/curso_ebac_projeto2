@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Agenda telefônica</title>
+</head>
+<body>
+
+    <div class="container">
+        <p class="erro">Este nome ou contato já existem na lista!</p>
+        <header>
+            <img src="img/logo.png" alt="agenda telefônica">
+            <h1>Agenda Telefônica</h1>
+        </header>
+
+        <form id="form-cadastro">
+            <input id="nome" type="text" required placeholder="Nome e Sobrenome">
+            <input id="tel" type="tel" required placeholder="+55 (DDD) 9XXXXXXXX">
+            <button type="submit">CADASTRAR</button>
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <th><img src="img/user.png" alt="ícone de usuário">Nome</th>
+                <th><img src="img/phone.png" alt="ícone de telefone">Contato</th>
+            </thead>
+            <tbody id="corpo-tabela">
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
