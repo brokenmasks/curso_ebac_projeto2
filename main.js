@@ -31,7 +31,6 @@ function validaNumero(numeroMaxMin){
 function validaDados(){
     let erro = document.querySelector('.erro');
     form.addEventListener('keyup', function(){
-        aviso.style.opacity = '0';
         erro.style.opacity = '0';
     });
 
