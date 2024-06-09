@@ -6,6 +6,11 @@ const nomes = [];
 const contatos = [];
 
 function validaInputs(){
+    let aviso = document.querySelector('.aviso');
+    form.addEventListener('keyup', function(){
+        aviso.style.opacity = '0';
+    });
+
     if(validaNome(user.value) && validaNumero(number.value)){
         btn.disabled = false;
     }else{
@@ -26,6 +31,7 @@ function validaNumero(numeroMaxMin){
 function validaDados(){
     let erro = document.querySelector('.erro');
     form.addEventListener('keyup', function(){
+        aviso.style.opacity = '0';
         erro.style.opacity = '0';
     });
 
